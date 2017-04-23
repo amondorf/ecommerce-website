@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- for bootstrap glyphicons -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,25 +25,63 @@
   <body>
 
 <!-- <<<<<<<<<< header >>>>>>>>>>> -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-header">
-        <div class="container-name">
-          <h1 class="pulsate">blackline publishing</h1>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+<!-- hamburger menu button as seen at https://bootstrapbay.com/blog/bootstrap-tutorial-navbar/ -->
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+   <div class="container-header">
+       <div class="container-name">
+         <h1 class="pulsate">blackline publishing</h1>
+       </div>
+
+     <div class="container-menu">
+       <div class="navbar-collapse collapse">
+       <ul class="nav navbar-nav navbar-right">
+         <li>BOOKS</li>
+         <li>BLOG</li>
+         <li>ABOUT</li>
+         <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+         <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+         <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+       </ul>
+
+     </div>
+   </div>
+ </div>
+ </nav>
+
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand pulsate" href="#">blackline publishing</a>
         </div>
-
-      <div class="container-menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li>BOOKS</li>
-          <li>BLOG</li>
-          <li>ABOUT</li>
-          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-        </ul>
-
       </div>
     </div>
-  </nav>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">BOOKS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">ABOUT</a></li>
+
+      </ul>
+
+    </div>
+  </nav> -->
 
 <br>
 <br>
