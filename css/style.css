@@ -1,5 +1,5 @@
 * {
-   border: 1px solid red !important;
+   /*border: 1px solid red !important;*/
 
 }
 
@@ -155,12 +155,16 @@ justify-content: flex-end;
 @media (max-width: 767px) {
 
 .container-menu {
-  font-size: 110%;
+  font-size: 120%;
 }
 
-.navbar-nav > li {
-  margin-left: 50px;
+.row {
+  margin-left: 0px;
   margin-right: 0px;
+}
+
+p {
+  margin-bottom: 50px;
 }
 
 /*footer*/
