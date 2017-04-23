@@ -1,5 +1,5 @@
 * {
-   /*border: 1px solid red !important;*/
+   border: 1px solid red !important;
 
 }
 
@@ -43,11 +43,10 @@ h4 {
 justify-content: flex-end;
 }
 
-
 .container-menu {
   width: 70%;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 2px;
   padding-top: 28px;
   padding-right: 98px;
@@ -153,8 +152,18 @@ justify-content: flex-end;
 	margin-left: 3px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
 
+.container-menu {
+  font-size: 110%;
+}
+
+.navbar-nav > li {
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+/*footer*/
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
 		text-align: center;
