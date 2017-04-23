@@ -31,6 +31,9 @@ h4 {
   padding-bottom: 30px;
 }
 
+.navbar-default {
+  background-color: white;
+}
 .container-header {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -38,7 +41,6 @@ h4 {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 justify-content: flex-end;
-background-color: white;
 }
 
 .container-releases {
