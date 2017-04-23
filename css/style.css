@@ -155,7 +155,7 @@ justify-content: flex-end;
 @media (max-width: 767px) {
 
 .container-menu {
-  font-size: 120%;
+  font-size: 130%;
 }
 
 .row {
@@ -163,9 +163,15 @@ justify-content: flex-end;
   margin-right: 0px;
 }
 
+.hide-blp {
+  display: none;
+}
+
 p {
   margin-bottom: 50px;
 }
+
+
 
 /*footer*/
 	.footer-distributed .footer-left,
