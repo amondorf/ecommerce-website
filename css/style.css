@@ -43,23 +43,6 @@ h4 {
 justify-content: flex-end;
 }
 
-.container-releases {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.container-book {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
 
 .container-menu {
   width: 70%;
@@ -94,6 +77,11 @@ justify-content: flex-end;
   margin-top: 70px;
 }
 
+.row {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .book-img {
   padding-left: 20px;
   float: left;
@@ -106,15 +94,6 @@ justify-content: flex-end;
   padding-right: 10px;
   padding-top: 50px;
 }
-
-.book-left {
-  width: 50%;
-}
-
-.book-right {
-  width: 50%;
-}
-
 
 /*footer*/
 
