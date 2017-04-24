@@ -187,6 +187,11 @@ justify-content: flex-end;
   padding-right: 0px;
 }
 
+/*adjust width of drop down menu in mobile */
+.navbar-collapse {
+  width: 200px;
+}
+
 #mobile-social {
   display:inline-flex;
   list-style: none;
@@ -196,7 +201,7 @@ justify-content: flex-end;
 }
 
 li {
-  padding-left: 80px;
+  padding-left: 70px;
 }
 
 .carousel-inner > .item > img,
@@ -222,7 +227,6 @@ li {
 }
 
 p {
-  /*margin-bottom: 80px;*/
   font-size: 120%;
   margin-bottom: 3em;
 }
