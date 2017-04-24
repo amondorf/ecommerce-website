@@ -172,6 +172,14 @@ justify-content: flex-end;
   padding-right: 0px;
 }
 
+.book-img {
+  padding-left: 0px;
+}
+
+.book-description {
+  display: none;
+}
+
 p {
   margin-bottom: 50px;
 }
