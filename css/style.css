@@ -1,5 +1,5 @@
 * {
-   /*border: 1px solid red !important;*/
+   border: 1px solid red !important;
 
 }
 
@@ -66,6 +66,10 @@ justify-content: flex-end;
 .navbar-nav > li {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#mobile-social {
+  display: none;
 }
 
 /*image slider as seen at https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
@@ -181,6 +185,22 @@ justify-content: flex-end;
 .navbar-nav > li {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+#mobile-social {
+  display:inline-flex;
+  list-style: none;
+  font-size: 180%;
+  margin-top: 230px;
+  justify-content: flex-end;
+}
+
+li {
+  padding-left: 30px;
+}
+
+#myCarousel {
+  margin-top: 0px;
 }
 
 .img-responsive {

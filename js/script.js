@@ -2,9 +2,9 @@ $('button').click(function(){
   $('.toggle').toggleClass('hide-blp');
 });
 
- if ( $(window).width() < 739) {
+ if ( $(window).width() < 767) {
    $(document).ready(function() {
-   	var showText = 100;
+   	var showText = 130;
    	$('.book-description').each(function() {
    		var content = $(this).html();
 
