@@ -1,5 +1,5 @@
 * {
-   border: 1px solid red !important;
+   /*border: 1px solid red !important;*/
 
 }
 
@@ -190,13 +190,13 @@ justify-content: flex-end;
 #mobile-social {
   display:inline-flex;
   list-style: none;
-  font-size: 180%;
-  margin-top: 230px;
+  font-size: 140%;
+  margin-top: 130px;
   justify-content: flex-end;
 }
 
 li {
-  padding-left: 30px;
+  padding-left: 80px;
 }
 
 #myCarousel {
