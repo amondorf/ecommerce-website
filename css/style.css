@@ -69,6 +69,7 @@ justify-content: flex-end;
   font-size: 16px;
   /*letter-spacing: 2px;*/
   text-align: right;
+  padding-right: 50px;
 }
 
 .container-name {
@@ -98,6 +99,11 @@ justify-content: flex-end;
   margin-top: 70px;
 }
 
+/*hide when clicked on book details*/
+.hide-section {
+  display: none;
+}
+
 .row {
   margin-left: 20px;
   margin-right: 20px;
@@ -112,17 +118,70 @@ justify-content: flex-end;
 
 .book-title {
   padding-top: 5px;
-  padding-left: 0px;
+  padding-left: 15px;
   padding-bottom: 0px;
 }
 
 .book-description {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
   padding-top: 10px;
 }
 
+/*<<<<<<<<<< book details page >>>>>>>>>>*/
+/***********************************************************************************************************/
+.title {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#details-page {
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+#details-img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .author {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  #details-page {
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+
+  #details-img {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
 /*footer*/
+/***********************************************************************************************************/
 
 /*footer links on left hand side*/
 .footer-distributed{
@@ -183,6 +242,7 @@ justify-content: flex-end;
 }
 
 /*<<<<<<<<<< about site >>>>>>>>>>*/
+/***********************************************************************************************************/
 
 #about-section {
   margin-top: 10px;
@@ -221,6 +281,7 @@ justify-content: flex-end;
 }
 
 /*<<<<<<<<<< mobile version >>>>>>>>>>*/
+/***********************************************************************************************************/
 @media (max-width: 767px) {
 
 .container-menu {
