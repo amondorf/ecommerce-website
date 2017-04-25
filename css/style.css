@@ -44,9 +44,9 @@ a {
   color: black;
 }
 
-a:hover {
-  color: grey;
-  text-decoration: none;
+a:-webkit-any-link {
+    text-decoration:none;
+    color: black;
 }
 
 .navbar-default {
@@ -167,10 +167,14 @@ justify-content: flex-end;
   margin-top: 40px;
 }
 
+
+
+
 @media (max-width: 767px) {
   .title {
     font-size: 18px;
-    margin: 0;
+/*top, right, bottom, and left*/
+    margin: 10px 0 0 0;
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
