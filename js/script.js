@@ -89,7 +89,7 @@ $('button').click(function(){
    			var c = content.substr(0, showText);
         //  var bookLink = $(this).attr("id");
    			// var h = content.substr(showText-1, content.length - showText)
-   			var html = c + '<a href="#"> ...continue reading</a>';
+   			var html = c + '<a class="underline" href="#"> ...continue reading</a>';
    			$(this).html(html);
    		};
    	});

@@ -49,6 +49,9 @@ a:-webkit-any-link {
     color: black;
 }
 
+.underline {border-bottom: 2px solid #FFFF00; padding-bottom:2px;}
+
+
 .navbar-default {
   background-color: white;
 }
@@ -225,7 +228,7 @@ justify-content: flex-end;
 
 }
 
-/*footer 'blackline publishing'*/
+/*footer 'dropp publishing'*/
 .footer-distributed .footer-left {
 	color:  #8f9296;
 	font-size: 14px;
@@ -374,6 +377,7 @@ p {
   font-size: 120%;
   margin-bottom: 3em;
 }
+
 /*footer*/
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
