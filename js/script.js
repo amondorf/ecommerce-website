@@ -75,7 +75,7 @@ $('button').click(function(){
          }
  ];
 
- $('img').click(function(){
+ $('img').on("click touch", function(){
   //  console.log("test");
    var bookId = $(this).attr('id');
    console.log(bookId);
