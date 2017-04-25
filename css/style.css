@@ -1,15 +1,16 @@
 * {
    /*border: 1px solid red !important;*/
-
 }
-
 
 /*pulsating header icon*/
 .pulsate {
     -webkit-animation: pulsate 5s ease-out;
     -webkit-animation-iteration-count: infinite;
     opacity: 0.1;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
 }
+
 @-webkit-keyframes pulsate {
     0% {
         opacity: 0.5;
@@ -30,11 +31,13 @@ h4 {
   padding-top: 60px;
   padding-left: 30px;
   padding-bottom: 30px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 p {
-  font-size: 15px;
-  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -71,6 +74,9 @@ justify-content: flex-end;
   /*letter-spacing: 2px;*/
   text-align: right;
   padding-right: 50px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .container-name {
@@ -138,6 +144,7 @@ justify-content: flex-end;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .author {
@@ -147,8 +154,11 @@ justify-content: flex-end;
 }
 
 #details-page {
-  margin-top: 70px;
+  margin-top: 40px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   margin-right: 70px;
+  background-color: #FAFAFA;
 }
 
 #details-img {
@@ -160,8 +170,8 @@ justify-content: flex-end;
 @media (max-width: 767px) {
   .title {
     font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -182,6 +192,7 @@ justify-content: flex-end;
   #details-img {
     max-width: 50%;
     max-height: auto;
+    padding: 0;
 /*center an image:*/
     display: block;
     margin-left: auto;
@@ -191,6 +202,10 @@ justify-content: flex-end;
 
 /*footer*/
 /***********************************************************************************************************/
+/*footer {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+}*/
 
 /*footer links on left hand side*/
 .footer-distributed{
@@ -199,10 +214,11 @@ justify-content: flex-end;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: normal 16px sans-serif;
-
 	padding: 25px 50px;
 	margin-top: 50px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+
 }
 
 /*footer 'blackline publishing'*/
