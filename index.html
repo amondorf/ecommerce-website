@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Facebook introduced Open Graph in 2010. It promotes integration between Facebook and other websites by allowing them to become rich “graph” objects with the same functionality as other Facebook objects.
+    Put simply, a degree of control is possible over how information travels from a third-party website to Facebook when a page is shared (or liked, etc.). In order to make this possible, information is sent via Open Graph meta tags in the <head> part of the website’s code. -->
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://www.yourdomain.com/image-name.jpg">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"content="books, erotica">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Shokushu Publishing</title>
+    <title>staircase publishing</title>
 
     <!-- Bootstrap -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -17,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,7 +46,7 @@
 
    <div class="container-header">
        <div class="container-name">
-         <h1 class="pulsate toggle"><a href="index.html">shokushu publishing</a></h1>
+         <h1 class="pulsate toggle"><a href="index.html">staircase publishing</a></h1>
        </div>
 
      <div class="container-menu">
@@ -49,7 +55,7 @@
 <!-- add complete URL! <a href="http://url.to.site/index.html#target>Link</a> -->
          <li><a href="index.html#target">BOOKS</a></li>
          <li><a href="subscribe.html">SUBSCRIBE</a></li>
-         <li><a href="blog.html">BLOG</a></li>
+         <li><a href="http://blog.staircasepublishing.com">BLOG</a></li>
          <li><a href="about.html">ABOUT</a></li>
          <li class="hidden-xs"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
          <li class="hidden-xs"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -89,11 +95,11 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <a href="subscribe.html"><img src="img/newsletter_flyer.jpg" alt="Chania"></a>
+      <a href="subscribe.html"><img src="img/newsletter_flyer.jpg" alt="image of newsletter flyer"></a>
     </div>
 
     <div class="item">
-      <a href="index.html#target"><img src="img/newest_release.jpg" alt="Chania"></a>
+      <a href="index.html#target"><img src="img/newest_release.jpg" alt="image of newest release"></a>
     </div>
 
   </div>
@@ -131,7 +137,7 @@
 <!-- first row of new releases -->
 <div class="row">
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book1" src="img/octopus_encounters.png">
+    <img class="img-responsive" id="book1" src="img/octopus_encounters.png" alt="Octupus Encounters book">
     <h4 class="book-title">Octopus Encounters</h4>
     <p class="book-description" id="book1">
       One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -139,7 +145,7 @@
   </div>
 
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book2" src="img/the_crimson_way.png">
+    <img class="img-responsive" id="book2" src="img/the_crimson_way.png" alt="The Crimson Way book">
     <h4 class="book-title">The Crimson Way</h4>
     <p class="book-description" id="book2">
       Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -152,7 +158,7 @@
 <!-- second row of new releases -->
 <div class="row">
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book3" src="img/far_gone.png">
+    <img class="img-responsive" id="book3" src="img/far_gone.png" alt="Far Gone book">
     <h4 class="book-title">Far Gone</h4>
     <p class="book-description" id="book3">
       Three Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -160,7 +166,7 @@
   </div>
 
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book4" src="img/alternative_views.png">
+    <img class="img-responsive" id="book4" src="img/alternative_views.png" alt="Alternative Views">
     <h4 class="book-title">Alternative Views</h4>
     <p class="book-description" id="book4">
       Four Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -173,7 +179,7 @@
 <!-- third row of new releases -->
 <div class="row">
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book5" src="img/under_no_umbrella.png">
+    <img class="img-responsive" id="book5" src="img/under_no_umbrella.png" alt="Under No Umbrella book">
     <h4 class="book-title">Under No Umbrella</h4>
     <p class="book-description" id="book5">
       Five Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -181,7 +187,7 @@
   </div>
 
   <div class="col-sm-6"><a href="#">
-    <img class="img-responsive" id="book6" src="img/i_never_said_that.png">
+    <img class="img-responsive" id="book6" src="img/i_never_said_that.png" alt="I Never Said That book">
     <h4 class="book-title">I Never Said That</h4>
     <p class="book-description" id="book6">
       Six Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -209,14 +215,14 @@
       ·
       <a href="subscribe.html">SUBSCRIBE</a>
       ·
-      <a href="blog.html">BLOG</a>
+      <a href="http://blog.staircasepublishing.com">BLOG</a>
       ·
       <a href="about.html">ABOUT</a>
       ·
       <a href="policies.html">POLICIES</a>
     </p>
 
-    <p>shokushu publishing &copy; 2017</p>
+    <p>staircase publishing &copy; 2017</p>
   </div>
 
 </footer>
