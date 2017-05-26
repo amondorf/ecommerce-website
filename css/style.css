@@ -72,8 +72,6 @@ justify-content: flex-end;
 
 .container-menu {
   width: 70%;
-  font-weight: bold;
-  font-size: 16px;
   /*letter-spacing: 2px;*/
   text-align: right;
   padding-right: 50px;
@@ -142,14 +140,31 @@ justify-content: flex-end;
 #mc_embed_signup {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  font: 20px 'Julius Sans One',Arial,sans-serif;
 }
 
 #subscribe-title {
   margin-top: 100px;
   text-align: center;
   font-size: 20px;
+  text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Julius Sans One', sans-serif;
 }
+
+#social {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#social-content {
+  margin-left: 150px;
+}
+
 
 /*<<<<<<<<<< book details page >>>>>>>>>>*/
 /***********************************************************************************************************/
@@ -388,6 +403,18 @@ li {
 p {
   font-size: 120%;
   margin-bottom: 3em;
+}
+
+#social {
+  display: none;
+}
+
+#social-content {
+  margin-left: 0px;
+}
+
+#subscribe-title {
+  margin-top: 40px;
 }
 
 /*footer*/
