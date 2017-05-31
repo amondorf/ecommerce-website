@@ -165,6 +165,20 @@ justify-content: flex-end;
   margin-left: 150px;
 }
 
+.policies {
+  margin: 10px 150px 10px 150px;
+}
+
+#policies-title {
+text-align: center;
+margin-top: 100px;
+font-size: 16px;
+}
+
+b {
+  margin-top: 15px;
+  font-size: 14px;
+}
 
 /*<<<<<<<<<< book details page >>>>>>>>>>*/
 /***********************************************************************************************************/
@@ -414,7 +428,16 @@ p {
 }
 
 #subscribe-title {
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+#mc_embed_signup {
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.policies {
+  margin: 10px 0px 10px 0px;
 }
 
 /*footer*/
