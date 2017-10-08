@@ -2,456 +2,260 @@
    /*border: 1px solid red !important;*/
 }
 
-/*pulsating header icon*/
-.pulsate {
-    -webkit-animation: pulsate 5s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 0.1;
-    font-family: 'Satisfy', cursive;
-    font-size: 45px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-@-webkit-keyframes pulsate {
-    0% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1.0;
-    }
-    100% {
-        opacity: 0.5;
-    }
-}
-
-h1 {
-  padding-left: 28px;
-}
-
-h4 {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-bottom: 30px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-p {
-  font-size: 16px;
-}
-
-a {
+a, a:hover, a:visited, a:active, a:link {
   color: black;
+  text-decoration: none;
 }
 
-a:-webkit-any-link {
-    text-decoration:none;
-    color: black;
+.underlined-thin {
+  border-bottom: 2px solid #542553;
+  padding-bottom:2px;
+  font-weight: bold;
 }
 
-.underline {border-bottom: 2px solid #FFFF00; padding-bottom:2px;}
-
+.logo {
+  max-width: 20em;
+  max-height: auto;
+  float: left;
+}
 
 .navbar-default {
+    background-color: white;
+    border-color: white;
+    padding: 1em 0 3em 1em;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<head image>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("../images/shirts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10em 4em 10em 4em;
+}
+
+.img-text {
+  font-size: 2em;
+  line-height: 2.5em;
+  /*margin-top: -3em;*/
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<colecciones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.header {
+  font-size: 2em;
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+
+.colecciones-2 {
+  padding-top: 2em;
+}
+
+.img-colecciones {
+  object-fit: cover;
+  width: 15em;
+  height: 15em;
+}
+
+.img-colecciones:hover {
+  cursor: pointer;
+}
+
+.img-center {
+  text-align: center;
+  position: relative;
+}
+
+.img-right {
+  text-align: right;
+}
+
+/*https://codepen.io/wizly/pen/lfqFw*/
+div.img-description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:5.5em; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	/* styling bellow */
+	/*background-color:black;*/
+	color:white;
+}
+p.img-description-content{
+	/*padding:10px;*/
+	margin:0px;
+	font-size: 30px;
+  cursor: pointer;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 100px;
+  /*left: 10em;*/
+  /*top: 10em;*/
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: white;
 }
 
-/*reverse bootstrap inherit css for navbar*/
-.navbar-default .navbar-nav>li>a {
-    color: black;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  width: 45%;
+  max-width: 1000px;
 }
 
-.container-header {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-justify-content: flex-end;
-}
-
-.container-menu {
-  width: 70%;
-  /*letter-spacing: 2px;*/
-  text-align: right;
-  padding-right: 50px;
-  font-family: 'Julius Sans One', sans-serif;
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
   font-weight: bold;
-  font-size: 20px;
 }
 
-.container-name {
-  width: 30%;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/*add spacing between header items*/
-.navbar-nav > li {
-  /*padding-left: 20px;*/
-  padding-right: 10px;
-}
-
-#mobile-social {
+.mySlides {
   display: none;
 }
 
-/*image slider as seen at https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
-.carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     /*max-width: 100%;*/
-     max-width: 50%;
-     max-height: auto;
-     margin: auto;
- }
-
-#myCarousel {
-  margin-top: 70px;
-}
-
-/*hide when clicked on book details*/
-.hide-section {
-  display: none;
-}
-
-.row {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.img-responsive {
-  /*padding-left: 20px;*/
-  float: left;
-  max-width: 40%;
-  max-height: auto;
-  margin-right: 10px;
-}
-
-.book-title {
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-bottom: 0px;
-}
-
-.book-description {
-  padding-left: 0px;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-
-#mc_embed_signup {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  text-transform: uppercase;
-  font: 20px 'Julius Sans One',Arial,sans-serif;
-}
-
-#subscribe-title {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-#social {
-  text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #8e5286;
   font-weight: bold;
   font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-#social-content {
-  margin-left: 150px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.policies {
-  margin: 10px 150px 10px 150px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #56555e;
 }
 
-#policies-title {
-text-align: center;
-margin-top: 100px;
-font-size: 16px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #8e5286;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-b {
-  margin-top: 15px;
-  font-size: 14px;
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
 }
 
-/*<<<<<<<<<< book details page >>>>>>>>>>*/
-/***********************************************************************************************************/
-.title {
-  font-size: 20px;
-  padding-top: 50px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Julius Sans One', sans-serif;
+img.demo {
+  opacity: 0.6;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.author {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
-#details-page {
-  margin-top: 40px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  margin-right: 70px;
-  background-color: #FAFAFA;
+img.hover-shadow {
+  transition: 0.3s
 }
 
-#details-img {
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.img-popup {
   max-width: 100%;
   max-height: auto;
-  margin-top: 40px;
+  overflow: hidden;
 }
 
-
-
-
-@media (max-width: 767px) {
-  .title {
-    font-size: 18px;
-/*top, right, bottom, and left*/
-    margin: 10px 0 0 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .author {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  #details-page {
-    margin-top: 10px;
-    margin-right: 0px;
-  }
-
-  #details-img {
-    max-width: 50%;
-    max-height: auto;
-    padding: 0;
-/*center an image:*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.center {
+  text-align: center;
 }
 
-/*footer*/
-/***********************************************************************************************************/
-/*footer {
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
-}*/
-
-/*footer links on left hand side*/
-.footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	padding: 25px 50px;
-	margin-top: 50px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
-
+.idea-text{
+  font-size: 1.2em;
+  margin: 0 9em 0 9em;
+  line-height: 1.7em;
 }
 
-/*footer 'dropp publishing'*/
-.footer-distributed .footer-left {
-	color:  #8f9296;
-	font-size: 14px;
+.contact {
+  padding: 2em 0 10em 0;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-/* Footer links */
+@media (max-width: 480px) {
 
-/*.footer-distributed p.footer-links{
-	font-size:14px;
-	font-weight: bold;
-	color:  #ffffff;
-	margin: 0 0 10px;
-	padding: 0;
-}*/
-
-.footer-distributed p.footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
-
-/*footer social media icons*/
-.footer-distributed .footer-right{
-	float: right;
-	margin-top: 6px;
-	max-width: 180px;
-}
-
-.footer-distributed .footer-right a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-left: 3px;
-}
-
-/*<<<<<<<<<< about site >>>>>>>>>>*/
-/***********************************************************************************************************/
-
-#about-section {
-  margin-top: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-#about-title {
-  margin-top: 100px;
-  padding-left: 150px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#about-subscribe {
-  margin-top: 10px;
-  margin-left: 150px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-@media (max-width: 767px) {
-  #about-section {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  #about-title {
-    margin-top: 20px;
-    padding-left: 0px;
-  }
-
-  #about-subscribe {
-    padding-left: 0px;
-  }
-}
-
-/*<<<<<<<<<< mobile version >>>>>>>>>>*/
-/***********************************************************************************************************/
-@media (max-width: 767px) {
-
-.container-menu {
-  font-size: 130%;
-}
-
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.hide-blp {
-  display: none;
-}
-
-.navbar-nav > li {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-/*adjust width of drop down menu in mobile */
-.navbar-collapse {
-  width: 200px;
-}
-
-#mobile-social {
-  display:inline-flex;
-  list-style: none;
-  font-size: 140%;
-  margin-top: 130px;
-  justify-content: flex-end;
-}
-
-li {
-  padding-left: 70px;
-}
-
-.carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     max-width: 100%;
-     max-height: auto;
- }
-
-#myCarousel {
-  margin-top: 0px;
-}
-
-.img-responsive {
-  padding-left: 0px;
-  float: none;
-  max-width: 80%;
-  max-height: auto;
-}
-
-.book-title {
-  padding-left: 10px;
-  font-size: 120%;
-}
-
-p {
-  font-size: 120%;
-  margin-bottom: 3em;
-}
-
-#social {
-  display: none;
-}
-
-#social-content {
-  margin-left: 0px;
-}
-
-#subscribe-title {
-  margin-top: 30px;
-}
-
-#mc_embed_signup {
-  margin-top: 0px;
-  margin-bottom: 60px;
-}
-
-.policies {
-  margin: 10px 0px 10px 0px;
-}
-
-/*footer*/
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
 }
